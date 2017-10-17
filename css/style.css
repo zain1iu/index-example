@@ -1,0 +1,363 @@
+﻿/*全局样式Start*/
+* {
+    margin: 0;
+    padding: 0;
+    /*font-weight: 700;*/
+    -webkit-font-smoothing: antialiased; /*webkit容器字体抗锯齿*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    background: #2d2c41;
+    font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+    overflow: hidden
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 80px;
+}
+
+h1 a {
+    color: #c12c42;
+    font-size: 16px;
+}
+/*全局样式End*/
+
+.wapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #f3f3f4;
+}
+
+.head {
+    height: 42px;
+}
+
+.main {
+    /*width: 100%;*/
+    height: 100%;
+}
+
+.bottom {
+    height: 5%;
+}
+
+.multi-tab {
+    width: calc(100% - 144px);
+    float: right;
+    /*border-left: 1px solid #f1f0f0;*/
+    height: 100%;
+    border-top: 1px solid #f1f0f0;
+    border-bottom: 1px solid #f1f0f0;
+    /*-webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;*/
+}
+
+.menu {
+    float: left;
+    /*min-width: 144px;*/
+    width: 144px;
+    max-width: 30%;
+    height: 100%;
+    background-color: #2F4050;
+    border-top: 1px solid #f1f0f0;
+    border-bottom: 1px solid #f1f0f0;
+    /*-webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;*/
+}
+
+.logo {
+    float: left;
+    width: 144px;
+    cursor: pointer;
+}
+
+.logo-img {
+    float: right;
+}
+
+.user-info {
+    float: right;
+    width: 500px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.user-info a:hover {
+    background-color: #cfcfcf;
+}
+
+.user-info-ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 42px;
+}
+
+.user-info-ul li {
+    float: left;
+    /*margin: 0 20px 0 20px;*/
+    display: inline-block;
+    list-style: none;
+    width: 70px;
+}
+
+/*.notify-btn:hover {
+    background-image: url(../img/notify-new.png);
+}*/
+
+.notify-has-new {
+    background-image: url(../img/has-new.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 12px;
+    color: white;
+    font-size: 0.5rem;
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+    font-family: cursive;
+    text-align: center;
+    margin: 0.2rem 0.2rem 0.1rem;
+    float: right;
+}
+
+.notify-btn {
+    background-image: url(../img/notify.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    float: left;
+    text-decoration: none;
+    position: relative;
+    width: 42px;
+    cursor: pointer;
+    height: 42px;
+    margin: 0 20px 0 20px;
+}
+
+.user-info-a {
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+    color: #999c9e;
+}
+
+.user-icon {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-image: url(../img/user.png);
+    /* background-size: 15px; */
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+
+.theme-change {
+    float: right;
+    margin-top: -2px;
+}
+
+.theme-change a {
+    width: 30px;
+    height: 5px;
+    cursor: pointer;
+}
+
+.multi-tab-big {
+    width: calc(100% - 40px) !important;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+/*消息盒子*/
+
+#notify-list {
+    display: none;
+}
+
+#notify-list.open {
+    color: #999c9e;
+    display: block;
+    position: absolute;
+    z-index: 10000;
+    top: 42px;
+    left: -150px;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    height: 250px;
+    width: 250px;
+    background-color: #fff;
+    top: 42px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+
+.notify-list span {
+    height: 50px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    float: left;
+    text-align: left;
+}
+
+.notify-box {
+    position: relative;
+}
+
+.notify-btn-white {
+    background-color: #fff;
+    z-index: 100000;
+}
+
+.notify-list-ul {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+.notify-list-ul li {
+    height: 50px;
+    line-height: 50px;
+    width: 250px;
+    cursor: pointer;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.notify-list li > i {
+    background-image: url(../img/sms.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    float: left;
+    width: 30px;
+    height: 50px;
+}
+
+.notify-list-ul li:hover {
+    /*color: #00aaee;*/
+    background-color: #f1f0f0;
+}
+
+.notify-list-selected {
+    color: #29b6f1;
+}
+
+.sms-icon-open {
+    background-image: url(../img/sms-open.png) !important;
+}
+
+.element-hide {
+    display: none !important;
+}
+
+.see-more {
+    color: #000;
+    height: 50px;
+    width: 100%;
+    border: 0px;
+    cursor: pointer;
+    background: white;
+}
+
+#notify-detail {
+    display: none;
+}
+
+#notify-detail.open {
+    /* display: none; */
+    color: #000000;
+    display: block !important;
+    position: absolute;
+    z-index: 10000;
+    top: 100px;
+    left: 120px;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    max-height: 150px;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    float: right;
+}
+
+.notify-detail span {
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+
+.notify-detail-head {
+    height: 20px;
+}
+
+.notify-detail-content {
+    /*height: 90px;*/
+    text-indent: 1rem; /*首行缩进*/
+}
+
+.notify-detail-word {
+    padding: 0.5rem;
+    max-height: 120px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.notify-detail-close {
+    color: #999c9e;
+    height: 30px;
+    width: 100%;
+    border: 0px;
+    cursor: pointer;
+    border-top: 1px solid #e0e0e0;
+    background: white;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 16px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    /*border-radius: 10px;*/
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    /*border-radius: 10px;*/
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
+    background-color: #999c9e;
+}
