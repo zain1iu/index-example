@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>infinitus大售后系统首页Example</title>
+    <meta charset="utf-8"/>
+
+    <!--Begin Include Html Style-->
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/tab/tab.css" rel="stylesheet"/>
+    <link href="css/menu/menu.css" rel="stylesheet"/>
+    <!--<link href="../css/font-awesome.min.css" rel="stylesheet"/>-->
+    <!--End Include Html Style-->
+
+    <script src="js/lib/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/tab/tab.js"></script>
+    <script src="js/menu/menu.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+<div class="wapper">
+    <div class="head">
+        <div class="logo">
+            <img src="img/infinitus-logo.png" class="logo-img" onclick="window.location.reload()" alt="infinitus大售后系统">
+        </div>
+        <div class="user-info">
+            <!--<img src="../img/infinitus-logo.png" class="logo-img" onclick="window.location.reload()">-->
+            <div class="notify-box">
+                <a class="notify-btn" id="notify-btn">
+                    <i class="notify-has-new">9+</i>
+                </a>
+                <div class="notify-list" id="notify-list">
+                    <ul class="notify-list-ul" id="notify-list-ul">
+                        <li><i></i><span>待办消息:服务单号1001120ABC</span></li>
+                        <li><i></i><span>待办消息:服务单号1001120ABC</span></li>
+                        <li><i></i><span>待办消息:服务单号1001120ABC</span></li>
+                        <li><i></i><span>待办消息:服务单号1001120ABC</span></li>
+                        <li><i></i><span>待办消息:服务单号1001120ABC</span></li>
+                        <li><i></i><span>待办消息:服务单号1001120ABC</span></li>
+                        <li><i></i><span>待办消息:服务单号1001120ABC</span></li>
+                    </ul>
+                    <button class="see-more">查看更多</button>
+                </div>
+                <div class="notify-detail" id="notify-detail">
+                    <div class="notify-detail-word">
+                        <span class="notify-detail-head">
+                        XX区XXX服务商客服您好:
+                        </span>
+                        <br/>
+                        <span class="notify-detail-content">
+                            您有一张服务单 1001120ABC 待派送网点，烦请XX小时内完成派送网点！如有问题可致电客服电话400-800-1188.
+                        </span>
+                    </div>
+                    <button class="notify-detail-close" id="notify-detail-close">关  闭</button>
+                </div>
+            </div>
+            <ul class="user-info-ul">
+                <li style="width: 150px"><a class="user-info-a"><i class="user-icon"></i>林先生</a></li>
+                <li><a class="user-info-a">首页</a></li>
+                <li><a class="user-info-a">设置</a></li>
+                <li><a class="user-info-a">注销</a></li>
+            </ul>
+            <div class="theme-change">
+                <a style="background-color: #00ecf5">______</a>
+                <a style="background-color: #e10200">______</a>
+                <a style="background-color: #f5f200">______</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="menu" id="tree-menu">
+            <ul id="accordion" class="accordion">
+                <li>
+                    <div class="link" id="menu-view-op" op-data="home"><i class="menu-icon"
+                                                                          style="background-image: url(img/menu/home-close.png)"></i>
+                        <div class="menu-list-row"><span>主菜单</span><i class="tree-view-btn menu-icon-last"></i></div>
+                    </div>
+                    <a style="display: none !important;" id="home-a" href="http://baidu.com">首页</a>
+                </li>
+                <li>
+                    <div class="link"><i class="menu-icon"
+                                         style="background-image: url(img/menu/quick-entry-close.png)"></i>
+                        <div class="menu-list-row"><span>快速入口</span><i class="tree-op menu-icon-last"></i></div>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="view/content.html#1">快速入口01</a></li>
+                        <li><a href="view/content.html#2">快速入口02</a></li>
+                        <li><a href="view/content.html#3">快速入口03</a></li>
+                        <li><a href="view/content.html#4">快速入口04</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="link"><i class="menu-icon"
+                                         style="background-image: url(img/menu/service-bill-close.png)"></i>
+                        <div class="menu-list-row"><span>服务单</span><i class="tree-op menu-icon-last"></i></div>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="view/content.html#5">服务单05</a></li>
+                        <li><a href="view/content.html#6">服务单06</a></li>
+                        <li><a href="view/content.html#7">服务单07</a></li>
+                        <li><a href="view/content.html#8">服务单08</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="link"><i class="menu-icon"
+                                         style="background-image: url(img/menu/base-data-close.png)"></i>
+                        <div class="menu-list-row"><span>主数据管理</span><i class="tree-op menu-icon-last"></i></div>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="view/content.html#9">主数据管理09</a></li>
+                        <li><a href="view/content.html#10">主数据管理10</a></li>
+                        <li><a href="view/content.html#11">主数据管理11</a></li>
+                        <li><a href="view/content.html#12">主数据管理12</a></li>
+                        <li><a href="view/content.html#13">主数据管理13</a></li>
+                        <li><a href="view/content.html#14">主数据管理14</a></li>
+                        <li><a href="view/content.html#15">主数据管理15</a></li>
+                        <li><a href="view/content.html#16">主数据管理16</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="drag-menu" id="drag-menu-area">
+            </div>
+        </div>
+        <div class="multi-tab" id="page-main">
+            <!--菜单HTML Start-->
+            <div class="tab-full">
+                <div id="page-tab">
+                    <button class="tab-btn" id="page-prev"></button>
+                    <nav id="page-tab-content">
+                        <div id="menu-list"></div>
+                    </nav>
+                    <button class="tab-btn" id="page-next"></button>
+                    <div id="page-operation">
+                        <span>关闭操作</span>
+                        <div id="menu-all">
+                            <ul id="menu-all-ul">
+                                <li close-op="another">关闭其他标签页</li>
+                                <li close-op="right">关闭右侧标签页</li>
+                                <li close-op="left">关闭左侧标签页</li>
+                                <li close-op="all">关闭所有标签页</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="empty-tab"></div>
+            </div>
+            <!--菜单HTML End-->
+            <!--iframe Start (根据页面顶部占用高度，自行调整高度数值)-->
+            <div id="page-content"></div>
+            <!--iframe End-->
+        </div>
+    </div>
+    <!--<div class="bottom"></div>-->
+</div>
+
+<script>
+    //初始化a标签链接到tab
+    $(".menu a").tab();
+
+    $(".menu a:first").click();
+</script>
+
+</body>
+</html>
