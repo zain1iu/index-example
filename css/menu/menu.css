@@ -36,7 +36,7 @@
     content: "";
     /* position: absolute; */
     height: 100%;
-    width: 1rem;
+    width: 0.5rem;
     float: right;
     cursor: e-resize;
     /*background-color: #fff;*/
@@ -80,15 +80,13 @@
     position: relative;
 }
 
-.accordion li.open .tree-op {
-    background-image: url(../../img/menu/tree-open.png);
-    width: 22px;
-    float: right;
-    height: 22px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-top: -2px;
+.accordion li.open i.tree-op {
+    /*逆时针旋转90度*/
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
 }
 
 .accordion li.open:before {

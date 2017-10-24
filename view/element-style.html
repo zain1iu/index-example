@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>infinitus通用样式demo</title>
+    <link href="../css/el-global.css" rel="stylesheet"/>
+    <script src="../js/lib/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../js/el-global.js"></script>
+</head>
+<body>
+<div class="example-block">
+    <div class="div-top" style="height: 25rem;">
+        <div style="text-align: center">
+            <h4>输入框/选择框</h4>
+            <ul class="input-ul">
+                <li><input class="new-input-el input-sys-auto" title="" placeholder="提交时系统自动生成" readonly="readonly"/>
+                </li>
+                <li><span class="new-input-span"><input class="new-input-el input-on-focus" title=""
+                                                        placeholder="获取焦点的输入框样式"/><i style="display: block"
+                                                                                     class="input-clear-btn"></i></span>
+                </li>
+                <li><span class="new-input-span"><input class="new-input-el input-normal" title=""
+                                                        placeholder="正常的输入框样式"
+                                                        value="享优乐牌空气净化器"/><i class="input-clear-btn"></i></span></li>
+                <li><select title="" class="new-select-el select-normal">
+                    <option>享优乐养生用品系列</option>
+                </select></li>
+                <li><select title="" id="auto-open-select" class="new-select-el select-on-select">
+                    <option>享优乐养生用品系列</option>
+                    <option>享优乐保健枕系列</option>
+                    <option>享优乐净水器系列</option>
+                    <option>享优乐个人护理系列</option>
+                </select></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>按钮样式</h4>
+            <div style="height: 50px">
+                <ul class="button-ul">
+                    <li>按钮常态</li>
+                    <li>
+                        <button class="new-btn new-btn-add">新 &nbsp; 增</button>
+                    </li>
+                    <li>
+                        <button class="new-btn new-btn-del">删 &nbsp; 除</button>
+                    </li>
+                    <li>
+                        <button class="new-btn new-btn-export">导 &nbsp; 出</button>
+                    </li>
+                </ul>
+            </div>
+            <br/>
+            <div style="height: 50px">
+                <ul class="button-ul">
+                    <li>按钮选中</li>
+                    <li>
+                        <button class="new-btn new-btn-add-active">新 &nbsp; 增</button>
+                    </li>
+                    <li>
+                        <button class="new-btn new-btn-del-active">删 &nbsp; 除</button>
+                    </li>
+                    <li>
+                        <button class="new-btn new-btn-export-active">导 &nbsp; 出</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <ul class="check-ul">
+                <li></li>
+            </ul>
+            <h4>单选/多选框</h4>
+            <div style="height: 50px">
+                <ul class="check-ul">
+                    <li>单选框</li>
+                    <li>
+                        <label><input type="radio" name="example-radio" title=""/><span></span>耐用品整机</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="example-radio" checked="checked"
+                                      title=""/><span></span>耐用品配件</label>
+                    </li>
+                </ul>
+            </div>
+            <br/>
+            <div style="height: 50px">
+                <ul class="check-ul">
+                    <li>多选框</li>
+                    <li>
+                        <label><input type="checkbox" name="example-radio" checked="checked" title=""/><span></span>维修配件</label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="example-radio" checked="checked" title=""/><span></span>补损配件</label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="example-radio" title=""/><span></span>GB可销配件</label>
+                    </li>
+                </ul>
+            </div>
+            <br/>
+            <div style="height: 50px">
+                <ul class="check-ul">
+                    <li>展开键</li>
+                    <li>
+                        <a class="new-fold"><i class="new-fold-btn"></i>展开</a>
+                    </li>
+                    <li>
+                        <a class="new-fold"><i class="new-fold-btn2"></i>展开</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h4>Tab/表格样式</h4>
+    <div class="div-mid">
+        <div class="panel-heading tablable-line " style="
+    /* float: left; */
+    position: relative;
+">
+            <ul class="nav nav-tabs nav-justified">
+                <li>
+                    <a href="content.html#info" onclick="return false;">关联售后代码</a>
+                </li>
+                <li>
+                    <a href="content.html#orderSend" onclick="return false;">关联维修配件</a>
+                </li>
+                <li>
+                    <a href="content.html#record" onclick="return false;">上门服务属性</a>
+                </li>
+                <li class="active" id="other-tab">
+                    <a href="content.html#other" onclick="return false;">故障分类</a>
+                </li>
+                <li>
+                    <a href="content.html#record" onclick="return false;">反馈属性</a>
+                </li>
+                <li>
+                    <a href="content.html#record" onclick="return false;">补损属性</a>
+                </li>
+                <li>
+                    <a href="content.html#record" onclick="return false;">结算属性</a>
+                </li>
+            </ul>
+            <div style="
+            float: right;
+            position: absolute;
+            top: 0;
+            right: 20px;
+            ">
+                <button class="new-btn new-btn-add">保 &nbsp; 存</button>
+                <button class="new-btn new-btn-export">导入Excel</button>
+            </div>
+        </div>
+        <!--<div class="portlet-body">
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <h2>1</h2>
+                </div>
+                <div class="tab-pane">
+                    <h2>2</h2>
+                </div>
+                <div class="tab-pane">
+                    <h2>3</h2>
+                </div>
+                <div class="tab-pane">
+                    <h2>4</h2>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</div>
+</body>
+</html>

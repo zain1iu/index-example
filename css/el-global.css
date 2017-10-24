@@ -1,0 +1,290 @@
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 1rem 1rem;
+}
+
+.input-clear-btn {
+    display: none;
+    background-image: url(../img/input-clear.png);
+    background-position: 50%;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 42px;
+    position: absolute;
+    right: 5px;
+    top: -9px;
+    cursor: pointer;
+}
+
+.example-block > div {
+    height: 50%;
+}
+
+.div-top > div {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.button-ul li, .check-ul li {
+    float: left;
+}
+
+.new-input-el, .new-select-el {
+    height: 38px;
+    min-width: 142px;
+    /*border: 1px solid #e9e9e9;*/
+    font-size: 14px;
+    font-family: 微软雅黑;
+    font-weight: normal;
+    padding: 1px 35px 1px 5px;
+}
+
+.new-input-el:focus, .new-select-el:focus {
+    border: 1.5px solid #50c4f3;
+    box-shadow: 0 0 10px 0 rgba(80, 196, 243, .2);
+}
+
+.select-on-select, .input-on-focus {
+    border: 1.5px solid #50c4f3;
+    box-shadow: 0 0 10px 0 rgba(80, 196, 243, .2);
+}
+
+.new-select-el {
+    /*-moz-appearance: none;
+    -webkit-appearance: none;*/
+    height: 40px;
+    min-width: 195px;
+}
+
+.new-select-el option {
+    height: 35px;
+    border: 1px solid #50c4f3;
+}
+
+.new-input-span {
+    position: relative;
+}
+
+.new-btn {
+    height: 40px;
+    width: 80px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    background-color: #fff;
+}
+
+.new-btn-add {
+    background-color: #00aaee;
+    border: 2px solid #00aaee;
+}
+
+.new-btn-del {
+    border: 2px solid #bf391a;
+    color: #bf391a;
+}
+
+.new-btn-export {
+    border: 2px solid #00aaee;
+    color: #00aaee;
+}
+
+.new-btn-del:active {
+    border: 2px solid #bf391a;
+    background-color: #bf391a;
+    color: #fff;
+}
+
+.new-btn-add:active, .new-btn-export:active {
+    border: 2px solid #347ab8;
+    background-color: #347ab8;
+    color: #fff;
+}
+
+input[type='radio'], input[type='checkbox'] {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    display: none
+}
+
+label {
+    /*width: 100px;*/
+    /*height: 100px;*/
+    display: inline-block;
+    cursor: pointer;
+}
+
+label input[type='radio'] + span {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url(../img/radio-icon.png) no-repeat;
+    background-position: 0% 0%;
+    vertical-align: middle;
+}
+
+label input[type='radio']:checked + span {
+    background-position: 0% 100%;
+}
+
+label input[type='checkbox'] + span {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url(../img/check-box-icon.png) no-repeat;
+    background-position: 0% 0%;
+    vertical-align: middle;
+}
+
+label input[type='checkbox']:checked + span {
+    background-position: 0% 100%;
+}
+
+/*演示用*/
+
+.new-btn-del-active {
+    border: 2px solid #bf391a;
+    background-color: #bf391a;
+    color: #fff;
+}
+
+.new-btn-add-active, .new-btn-export-active {
+    border: 2px solid #347ab8;
+    background-color: #347ab8;
+    color: #fff;
+}
+
+.div-mid {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+
+/*END*/
+
+.new-fold {
+    cursor: pointer;
+}
+
+.new-fold-btn {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url(../img/fold-btn.png) no-repeat;
+    background-position: 50%;
+    vertical-align: middle;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.new-fold-btn2 {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url(../img/fold-btn2.png) no-repeat;
+    background-position: 50%;
+    vertical-align: middle;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.new-fold-active {
+    background-image: url(../img/fold-btn-active.png);
+    /*顺时针旋转180度*/
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.new-fold-active2 {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg); /* Internet Explorer */
+    -moz-transform: rotate(90deg); /* Firefox */
+    -webkit-transform: rotate(90deg); /* Safari 和 Chrome */
+    -o-transform: rotate(90deg); /* Opera */
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+/*Tab栏*/
+.panel-heading {
+    height: 47px;
+    line-height: 44px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.tablable-line {
+
+}
+
+.panel-heading > .nav {
+    height: 43px;
+    padding: 0;
+}
+
+.panel-heading > .nav-justified {
+
+}
+
+.panel-heading > .nav-tabs {
+
+}
+
+.panel-heading > .nav-tabs > li {
+    float: left;
+    padding: 0 1.5rem;
+    margin: auto;
+}
+
+.panel-heading > .nav-tabs > li:hover, .panel-heading > .nav-tabs > li.active {
+    background-color: #f5fafe;
+    border-bottom: 3px solid #01aaef;
+}
+
+.panel-heading > .nav-tabs > li:hover > a, .panel-heading > .nav-tabs > li.active > a {
+    color: #01aaef;
+}
+
+.panel-heading > .nav-tabs > li > a {
+    text-decoration: none;
+    color: #000;
+    font-style: normal;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.portlet-body {
+
+}
+
+.portlet-body > .tab-content {
+
+}
+
+.portlet-body > .tab-content > div.tab-pane {
+
+}
+
+.portlet-body > .tab-content > div.active {
+
+}
